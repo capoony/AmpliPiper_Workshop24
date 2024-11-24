@@ -21,3 +21,6 @@ ___
 
 All datasets data is made available for training, testing, and benchmarking purposes and is intended for use in academic and research applications. Please ensure proper attribution is given when using this data.
 
+### Launch your working environment with GitPod
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nhmvienna/AmpliPiper_Workshop_2024)

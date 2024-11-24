@@ -1,0 +1,5 @@
+image: ghcr.io/nhmvienna/amplipiper:main
+
+tasks:
+  - init: |
+      echo "WELCOME TO AmpliPiper DEMO WORKSPACE"
