@@ -16,7 +16,7 @@ Gerchen JF, Veltsos P, Pannell JR. Recurrent allopolyploidization, Y-chromosome 
 
 ### Opiliones spp. ONT data
 
-An unpublished dataset based on daddy-longlegs samples collected in the course of the ABOL initative that were sequenced with ONT for the COX1 locus (amplified with standard barcoding Folmer primers).
+An unpublished dataset based on "Daddy longlegs" samples collected in the course of the [ABOL](https://www.abol.ac.at/en/homepage_en/) initative that were sequenced with ONT for the COX1 locus (amplified with standard barcoding Folmer primers).
 ___
 
 ## Obtain datasets
