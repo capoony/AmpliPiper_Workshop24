@@ -124,7 +124,7 @@ ABOL24-0016,${WD}/datasets/Opiliones/data/reads/barcode69.fastq.gz
 ABOL24-0017,${WD}/datasets/Opiliones/data/reads/barcode81.fastq.gz
 ABOL24-0019,${WD}/datasets/Opiliones/data/reads/barcode93.fastq.gz
 ABOL24-0020,${WD}/datasets/Opiliones/data/reads/barcode10.fastq.gz
-""" >${WD}/datasets/Opiliones/files/samples.csv
+""" >${WD}/datasets/Opiliones/data/samples.csv
 
 ## (b) run AmpliPiper
 

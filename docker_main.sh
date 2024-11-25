@@ -20,7 +20,7 @@
 
 ## AmpliPiper Workshop folder
 
-WD='/app/userdata/'
+WD='/app/userdata'
 
 ## AmpliPiper Software
 
@@ -118,7 +118,7 @@ ABOL24-0016,${WD}/datasets/Opiliones/data/reads/barcode69.fastq.gz
 ABOL24-0017,${WD}/datasets/Opiliones/data/reads/barcode81.fastq.gz
 ABOL24-0019,${WD}/datasets/Opiliones/data/reads/barcode93.fastq.gz
 ABOL24-0020,${WD}/datasets/Opiliones/data/reads/barcode10.fastq.gz
-""" >${WD}/datasets/Opiliones/files/samples.csv
+""" >${WD}/datasets/Opiliones/data/samples.csv
 
 ## (b) run AmpliPiper
 
@@ -132,7 +132,7 @@ bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --nreads 1000 \
     --threads 16 \
     --kthreshold 0.05 \
-    --blast your@email.com \
+    --blast astraberte9@gmail.com \
     --similar_consensus 97 \
     --minreads 50 \
     --sizerange 100 \
