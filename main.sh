@@ -133,7 +133,7 @@ ABOL24-0020,${WD}/datasets/Opiliones/data/reads/barcode10.fastq.gz
 bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --samples ${WD}/datasets/Opiliones/data/samples.csv \
     --primers ${WD}/datasets/Opiliones/data/primers.csv \
-    --output ${WD}/results/Opiliones/demo1/ \
+    --output ${WD}/results/Opiliones/demo1 \
     --quality 10 \
     --nreads 1000 \
     --threads 16 \
@@ -176,7 +176,7 @@ done
 bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --samples ${WD}/datasets/Mercurialis/data/samples.csv \
     --primers ${WD}/datasets/Mercurialis/data/primers.csv \
-    --output ${WD}/results/Mercurialis/demo1/ \
+    --output ${WD}/results/Mercurialis/demo1 \
     --quality 10 \
     --nreads 1000 \
     --threads 16 \
