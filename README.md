@@ -35,20 +35,28 @@ git clone https://github.com/nhmvienna/AmpliPiper_Workshop_2024
 
 If you have Docker and want to run the pipeline with that you should:
 
-1. Modify the [.env](./.env) file so that the `USERDATA_PATH` to match with the path to the cloned `AmpliPiper_Workshop_2024` repository 
+1. Modify the [.env](./.env) file so that the `USERDATA_PATH` to match with the path to the cloned `AmpliPiper_Workshop_2024` repository.
+
+    > ⚠️ **WARNING!** ⚠️ _If you are on Windows, you should specify the path **exactly** in this way:_ 
+    >
+    > `USERDATA_PATH="c:/Users/user/path/to/AmpliPiper_Workshop_2024"`
+    >
+    > _for example:_
+    >
+    >`USERDATA_PATH="c:/Users/User/AmpliPiper_Workshop_2024"`
 
 2. Use the following command to launch the environment: 
 
     - If you are on Linux:
 
-```bash
-bash compose.sh
-```
+    ```bash
+    bash compose.sh
+    ```
     - If you are on Windows **Powershell**:
 
-```powershell
-.\compose.ps1
-```
+    ```powershell
+    .\compose.ps1
+    ```
 
 3. Inside the environment that this command will create, run:
 
@@ -60,8 +68,9 @@ bash docker_main.sh
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nhmvienna/AmpliPiper_Workshop_2024)
 
-> _WARNING! Workspaces don't automatically delete after you close them!_
+> ⚠️ **WARNING!** ⚠️ _Workspaces don't automatically delete after you close them!_
 
 Follow these steps to delete a workspace (and save precious cloud quota):
 
-TBW
+![Gitpod Demo](./imgs/gitpod_demo.gif)
+
