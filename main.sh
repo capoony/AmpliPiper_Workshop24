@@ -16,12 +16,62 @@
 
 # ======================================== Part I ===========================================
 
-## 1) Set working directory
+# (1) Set working directories
+
+## AmpliPiper Workshop folder
 
 ## a) when using GitPod:
 WD='/workspace/AmpliPiper_Workshop_2024'
 ## b) else change to your local path to this repo
 WD='<your/local/path/to/AmpliPiper_Workshop_2024'
+
+## AmpliPiper Software
+
+## a) when using GitPod:
+AMPLIPIPER='/app/'
+## b) else change to your local path to this repo
+AMPLIPIPER='<your/local/path/to/AmpliPiper'
+
+# (2) generate samples.csv file for Syrphid Datasest
+
+## print header for samples.csv
+printf "ID,PATH\n" >${AMPLIPIPER}/testdata/data/samples.csv
+
+## loop through input FASTQ files
+for Filepath in ${AMPLIPIPER}/testdata/reads/*fastq.gz; do
+
+    ## get Filename
+    Filename=${Filepath##*/}
+
+    ## get File ID
+    ID=${Filename%.fastq.gz*}
+
+    ## print to samples.csv
+    echo ${ID},${Filepath} >>${AMPLIPIPER}/testdata/data/samples.csv
+done
+
+# (3) run AmpliPiper on Syrphid dataset
+
+## automatically generates new output folder in AmpliPiper Workshop folder ${WD}/results/Syrphid/FirstTry
+
+## !! Don't forget to adjust your email address (change your@email.com)
+## !! Use a reasonable number of threads for your system
+
+## execute Pipeline
+bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
+    --samples ${AMPLIPIPER}/testdata/data/samples.csv \
+    --primers ${AMPLIPIPER}/testdata/data/primers.csv \
+    --output ${WD}/results/Syrphid/FirstTry \
+    --quality 10 \
+    --nreads 1000 \
+    --blast your@email.com \
+    --similar_consensus 97 \
+    --threads 16 \
+    --kthreshold 0.05 \
+    --minreads 50 \
+    --sizerange 100 \
+    --outgroup He_mor_41 \
+    --force
 
 # ======================================== Part II ===========================================
 
