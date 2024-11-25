@@ -1,6 +1,6 @@
 # AmpliPiper Workshop - NOBIS Tagung 28/11/2024
 
-![AmpliPiper](datasets/AmpliPiper_logo.png)
+![AmpliPiper](imgs/AmpliPiper_logo.png)
 
 ## Overview
 
@@ -31,6 +31,37 @@ cd <path/to/target/folder>
 git clone https://github.com/nhmvienna/AmpliPiper_Workshop_2024
 ```
 
+## Running the pipeline in Docker
+
+If you have Docker and want to run the pipeline with that you should:
+
+1. Modify the [.env](./.env) file so that the `USERDATA_PATH` to match with the path to the cloned `AmpliPiper_Workshop_2024` repository 
+
+2. Use the following command to launch the environment: 
+
+    - If you are on Linux:
+
+```bash
+bash compose.sh
+```
+    - If you are on Windows **Powershell**:
+
+```powershell
+.\compose.ps1
+```
+
+3. Inside the environment that this command will create, run:
+
+```bash
+bash docker_main.sh
+```
+
 ## Launch your working environment with GitPod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nhmvienna/AmpliPiper_Workshop_2024)
+
+> _WARNING! Workspaces don't automatically delete after you close them!_
+
+Follow these steps to delete a workspace (and save precious cloud quota):
+
+TBW

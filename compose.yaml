@@ -1,0 +1,10 @@
+services:
+  app: 
+    container_name: amplipiper_container
+    restart: always
+    image: ghcr.io/nhmvienna/amplipiper:main
+    volumes:
+      - $USERDATA_PATH:/app/userdata/
+    stdin_open: true
+    tty: true
+    entrypoint: "/bin/bash"
