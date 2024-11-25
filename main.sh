@@ -14,7 +14,7 @@
 
 ### Welcome to the AmpliPiper Workshop at the NOBIS 2024 conference
 
-# ======================================== Part I ===========================================
+# ======================================== Part II ===========================================
 
 # (1) Set working directories
 
@@ -107,7 +107,7 @@ bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --force \
     --freqthreshold 0
 
-# ======================================== Part II ===========================================
+# ======================================== Part III ===========================================
 
 # In the second part, we will investigate some more complex datasets
 
