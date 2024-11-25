@@ -26,6 +26,8 @@ Make sure that you have `git` installed and properly set up on your system. Clon
 ```bash
 ## go to your target directory
 cd <path/to/target/folder>
+
+## use git to clone this repository 
 git clone https://github.com/nhmvienna/AmpliPiper_Workshop_2024
 ```
 
