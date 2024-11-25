@@ -73,6 +73,21 @@ bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --outgroup He_mor_41 \
     --force
 
+## ----> What do all the parameters mean? Check out the README file in the AmpliPiper repo
+
+## (4) now explore the output
+
+### On GitPod - start HTML preview to view output HTML in VScode
+
+python -m http.server 8000
+
+### The Output HTML should open automatically on LINUX.
+### On a MAC, copy the PATH to the HTML and copy into your Browser
+
+## ----> What do you see?
+## ----> Why are there no additional haplotypes in diploid loci? (Check the tabular summary of the Consensus Seq reconstruction)
+## ----> Are the phylogenies of all loci consistent?
+
 # ======================================== Part II ===========================================
 
 ## make input file for the samples
