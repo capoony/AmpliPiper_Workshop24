@@ -20,14 +20,14 @@
 
 ## AmpliPiper Workshop folder
 
-## a) when using GitPod:
+## a) when using GitPod
 WD='/workspace/AmpliPiper_Workshop_2024'
 ## b) else change to your local path to this repo
-WD='<your/local/path/to/AmpliPiper_Workshop_2024'
+WD='<your/local/path/to/AmpliPiper_Workshop_2024>'
 
 ## AmpliPiper Software
 
-## a) when using GitPod:
+## a) when using GitPod
 AMPLIPIPER='/app/'
 ## b) else change to your local path to this repo
 AMPLIPIPER='<your/local/path/to/AmpliPiper'
