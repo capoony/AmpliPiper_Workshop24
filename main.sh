@@ -34,8 +34,9 @@ AMPLIPIPER='<your/local/path/to/AmpliPiper'
 
 # (2) generate samples.csv file for Syrphid Datasest
 
+mkdir -p ${WD}/results/Syrphid
 ## print header for samples.csv
-printf "ID,PATH\n" >${AMPLIPIPER}/testdata/data/samples.csv
+printf "ID,PATH\n" >${WD}/results/Syrphid/samples.csv
 
 ## loop through input FASTQ files
 for Filepath in ${AMPLIPIPER}/testdata/reads/*fastq.gz; do
@@ -47,7 +48,7 @@ for Filepath in ${AMPLIPIPER}/testdata/reads/*fastq.gz; do
     ID=${Filename%.fastq.gz*}
 
     ## print to samples.csv
-    echo ${ID},${Filepath} >>${AMPLIPIPER}/testdata/data/samples.csv
+    echo ${ID},${Filepath} >>${WD}/results/Syrphid/samples.csv
 done
 
 # (3) run AmpliPiper on Syrphid dataset
@@ -59,7 +60,7 @@ done
 
 ## execute Pipeline
 bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
-    --samples ${AMPLIPIPER}/testdata/data/samples.csv \
+    --samples ${WD}/results/Syrphid/samples.csv \
     --primers ${AMPLIPIPER}/testdata/data/primers.csv \
     --output ${WD}/results/Syrphid/FirstTry \
     --quality 10 \
@@ -129,7 +130,7 @@ ABOL24-0020,${WD}/datasets/Opiliones/data/reads/barcode10.fastq.gz
 
 ## modify parameters if you wish
 
-bash /app/shell/AmpliPiper.sh \
+bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --samples ${WD}/datasets/Opiliones/data/samples.csv \
     --primers ${WD}/datasets/Opiliones/data/primers.csv \
     --output ${WD}/datasets/Opiliones/results/demo1/ \
@@ -172,7 +173,7 @@ done
 
 ## modify parameters if you wish
 
-bash /app/shell/AmpliPiper.sh \
+bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
     --samples ${WD}/datasets/Mercurialis/data/samples.csv \
     --primers ${WD}/datasets/Mercurialis/data/primers.csv \
     --output ${WD}/datasets/Mercurialis/results/demo1/ \
@@ -184,5 +185,4 @@ bash /app/shell/AmpliPiper.sh \
     --similar_consensus 97 \
     --minreads 50 \
     --sizerange 100 \
-    --freqthreshold 0 \
     --force
