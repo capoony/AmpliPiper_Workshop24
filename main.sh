@@ -24,11 +24,13 @@
 WD='/workspace/AmpliPiper_Workshop_2024'
 ## b) else change to your local path to this repo
 WD='<your/local/path/to/AmpliPiper_Workshop_2024>'
+## c) else if you use Docker
+WD='/app/userdata'
 
 ## AmpliPiper Software
 
 ## a) when using GitPod
-AMPLIPIPER='/app/'
+AMPLIPIPER='/app'
 ## b) else change to your local path to this repo
 AMPLIPIPER='<your/local/path/to/AmpliPiper'
 
@@ -93,7 +95,7 @@ python -m http.server 8000
 
 ## execute Pipeline
 bash ${AMPLIPIPER}/shell/AmpliPiper.sh \
-    --samples ${AMPLIPIPER}/testdata/data/samples.csv \
+    --samples ${WD}/results/Syrphid/samples.csv \
     --primers ${AMPLIPIPER}/testdata/data/primers.csv \
     --output ${WD}/results/Syrphid/demo_all \
     --quality 10 \
