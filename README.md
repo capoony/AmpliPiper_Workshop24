@@ -10,7 +10,7 @@ This repository provides published and unpublished test datasets that will be us
 
 ### *Mercurialis* spp. ONT data
 
-Raw reads and phylogenetic tree files of a subset of samples from the complex plant genus *Mercurialis* - a close relative of the nettle (*Urtica dioica*) - were obtaines from the following publication:
+Raw reads and phylogenetic tree files of a subset of samples from the complex plant genus *Mercurialis* - a close relative of the nettle (*Urtica dioica*) - were obtained from the following publication:
 
 Gerchen JF, Veltsos P, Pannell JR. Recurrent allopolyploidization, Y-chromosome introgression and the evolution of sexual systems in the plant genus Mercurialis. Philos Trans R Soc Lond B Biol Sci. 2022 May 9;377(1850):20210224. doi: 10.1098/rstb.2021.0224. Epub 2022 Mar 21. PMID: 35306889; PMCID: PMC8935306.
 
