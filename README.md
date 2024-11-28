@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository provides published and unpublished test datasets that will be used to test multilocus amplicon sequencing in our workshop during the NOBIS conference at the Naturhistorisches Museum Wien on November 28th 2024.
+This repository provides published and unpublished test datasets that will be used to test multilocus amplicon sequencing in our workshop during the NOBIS conference at the Naturhistorisches Museum Wien on November 28th 2024. Please find the slides for the presentation in [here](amplipiper_workshop_20241128.pdf)
 
 [AmpliPiper](https://github.com/nhmvienna/AmpliPiper) is an open-source automated analysis pipeline based on BASH scripting, Python and R for analyzing high-throughput amplicon sequencing data for multiple samples and loci. The pipeline performs various tasks, including raw read demultiplexing, filtering, consensus sequence reconstruction, species identification and phylogenetic analysis.
 
